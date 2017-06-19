@@ -1,0 +1,66 @@
+{
+  "name": "tilskudd-dashboard",
+  "description": "Dashboard for tilskudd",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "name": "Geir Gåsodden",
+    "email": "geir.gasodden@pythonia.no",
+    "url": "https://github.com/zrrrzzt"
+  },
+  "engines": {
+    "node": ">=8.1.2"
+  },
+  "scripts": {
+    "test": "standard && nsp check && ava",
+    "test-offline": "standard && ava",
+    "coverage": "nyc ava",
+    "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
+    "standard-fix": "standard --fix",
+    "dev": "next",
+    "build": "next build && next export",
+    "start": "next start",
+    "now-deploy": "npm run build && now out --static -n dashboard-tilskudd && now alias"
+  },
+  "keywords": [
+    "dashboard",
+    "next",
+    "status",
+    "Telemark fylkeskommune",
+    "tilskudd",
+    "Louie"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telemark/tilskudd-dashboard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/telemark/tilskudd-dashboard/issues"
+  },
+  "homepage": "https://github.com/telemark/tilskudd-dashboard",
+  "now": {
+    "name": "dashboard-tilskudd",
+    "alias": [
+      "dashboard.tilskudd.next.t-fk.no"
+    ],
+    "env": {
+      "NODE_ENV": "production"
+    },
+    "type": "npm"
+  },
+  "devDependencies": {
+    "ava": "0.19.1",
+    "coveralls": "2.13.1",
+    "nsp": "2.6.3",
+    "nyc": "11.0.2",
+    "standard": "10.0.2"
+  },
+  "dependencies": {
+    "axios": "0.16.2",
+    "muicss": "0.9.16",
+    "next": "3.0.0-beta16",
+    "react": "15.6.1",
+    "react-dom": "15.6.1"
+  }
+}
