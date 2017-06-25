@@ -20,7 +20,7 @@ export default class Index extends React.Component {
           <h1 className='mui--text-title'>Tilskudd Dashboard</h1>
           <Row>
             <Col md='4'>
-              <Queue title='Antall i kø' source='https://tfk-stats.firebaseio.com/tilskudd.json' refresh='10' />
+              <Queue title='Antall i kø' source='https://stats.logs.tilskudd.t-fk.win/stats/queue' refresh='10' />
             </Col>
             <Col md='4'>
               <Saksbehandling title='Antall behandlet' source='https://seneca-firebase-test.firebaseio.com/tfk-saksbehandling-organisasjon-tilskudd.json' refresh='10' />
