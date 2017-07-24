@@ -1,7 +1,7 @@
 {
   "name": "tilskudd-dashboard",
   "description": "Dashboard for tilskudd",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "license": "MIT",
   "private": true,
   "author": {
@@ -58,7 +58,7 @@
   },
   "dependencies": {
     "axios": "0.16.2",
-    "muicss": "0.9.20",
+    "muicss": "0.9.18",
     "next": "3.0.1-beta.1",
     "react": "15.6.1",
     "react-dom": "15.6.1"
