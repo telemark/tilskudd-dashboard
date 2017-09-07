@@ -1,7 +1,7 @@
 {
   "name": "tilskudd-dashboard",
   "description": "Dashboard for tilskudd",
-  "version": "1.1.20",
+  "version": "1.1.21",
   "license": "MIT",
   "private": true,
   "author": {
@@ -53,7 +53,7 @@
     "ava": "0.22.0",
     "coveralls": "2.13.1",
     "nsp": "2.8.0",
-    "nyc": "11.2.1",
+    "nyc": "11.1.0",
     "standard": "10.0.3"
   },
   "dependencies": {
