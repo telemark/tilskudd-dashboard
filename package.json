@@ -1,7 +1,7 @@
 {
   "name": "tilskudd-dashboard",
   "description": "Dashboard for tilskudd",
-  "version": "1.1.22",
+  "version": "1.2.0",
   "license": "MIT",
   "private": true,
   "author": {
@@ -10,7 +10,7 @@
     "url": "https://github.com/zrrrzzt"
   },
   "engines": {
-    "node": ">=8.1.2"
+    "node": ">=8.5.0"
   },
   "scripts": {
     "test": "standard && nsp check && ava",
@@ -53,7 +53,7 @@
     "ava": "0.22.0",
     "coveralls": "2.13.1",
     "nsp": "2.8.0",
-    "nyc": "11.1.0",
+    "nyc": "^11.2.1",
     "standard": "10.0.3"
   },
   "dependencies": {
