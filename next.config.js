@@ -1,3 +1,4 @@
 exports.exportPathMap = () => ({
-  '/': { page: '/' }
+  '/': { page: '/' },
+  '/stats': { page: '/stats' }
 })
