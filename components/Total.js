@@ -8,7 +8,7 @@ export default class Status extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      data: false
+      data: {total: 0}
     }
     this.tick = this.tick.bind(this)
   }
@@ -29,7 +29,7 @@ export default class Status extends React.Component {
       <Panel>
         <h2>{this.props.title}</h2>
         <ul className='mui-list--unstyled'>
-          {this.state.data ? <li className='mui--text-display4'>{this.state.data.antallTilskudd || 0}</li> : null}
+          {this.state.data ? <li className='mui--text-display4'>{this.state.data.total || 0}</li> : null}
         </ul>
       </Panel>
     )

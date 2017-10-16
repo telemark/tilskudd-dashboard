@@ -1,7 +1,7 @@
 {
   "name": "tilskudd-dashboard",
   "description": "Dashboard for tilskudd",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "license": "MIT",
   "private": true,
   "author": {
@@ -10,7 +10,7 @@
     "url": "https://github.com/zrrrzzt"
   },
   "engines": {
-    "node": ">=8.6.0"
+    "node": ">=8.7.0"
   },
   "scripts": {
     "test": "standard && nsp check && ava",
@@ -28,8 +28,7 @@
     "next",
     "status",
     "Telemark fylkeskommune",
-    "tilskudd",
-    "Louie"
+    "tilskudd"
   ],
   "repository": {
     "type": "git",

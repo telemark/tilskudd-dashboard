@@ -6,7 +6,7 @@ import Row from 'muicss/lib/react/row'
 import Col from 'muicss/lib/react/col'
 import Head from '../components/head'
 import Queue from '../components/Queue'
-import Saksbehandling from '../components/Saksbehandling'
+import Undertjenester from '../components/Undertjenester'
 import Total from '../components/Total'
 import Navbar from '../components/Navbar'
 
@@ -18,16 +18,14 @@ export default class Index extends React.Component {
         <Container fluid>
           <Navbar />
           <Row>
-            <Col md='4'>
+            <Col md='6'>
               <Queue title='Antall i kø' source='https://logs.tilskudd.service.t-fk.no/stats/queue' refresh='10' />
             </Col>
-            <Col md='4'>
-              <Saksbehandling title='Antall behandlet' source='https://seneca-firebase-test.firebaseio.com/tfk-saksbehandling-organisasjon-tilskudd.json' refresh='10' />
-            </Col>
-            <Col md='4'>
-              <Total title='Antall totalt' source='https://tfk-stats.firebaseio.com/tilskudd.json' refresh='10' />
+            <Col md='6'>
+              <Total title='Antall totalt' source='https://logs.tilskudd.service.t-fk.no/stats/total' refresh='10' />
             </Col>
           </Row>
+          <Undertjenester source='https://stats.service.t-fk.no/stats/tilskudd' refresh='10' />
         </Container>
       </div>
     )
