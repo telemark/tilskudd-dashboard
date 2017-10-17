@@ -17,7 +17,7 @@ export default class Index extends React.Component {
           <Navbar />
           <Row>
             <Col md='12'>
-              <Summary title='Oppsummering' source='https://tfk-stats.firebaseio.com/tilskudd.json' refresh='10' />
+              <Summary title='Oppsummering' source='https://logs.tilskudd.service.t-fk.no/stats/categories' refresh='10' />
             </Col>
           </Row>
         </Container>
