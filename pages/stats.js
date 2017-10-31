@@ -13,14 +13,16 @@ export default class Index extends React.Component {
     return (
       <div>
         <Head />
-        <Container fluid>
-          <Navbar />
-          <Row>
-            <Col md='12'>
-              <Summary title='Oppsummering' source='https://logs.tilskudd.service.t-fk.no/stats/categories' refresh='10' />
-            </Col>
-          </Row>
-        </Container>
+        <div>
+          <Navbar title={'Dashboard tilskudd'} />
+          <Container fluid>
+            <Row>
+              <Col md='12'>
+                <Summary title='Oppsummering' source='https://logs.tilskudd.service.t-fk.no/stats/categories' refresh='10' />
+              </Col>
+            </Row>
+          </Container>
+        </div>
       </div>
     )
   }

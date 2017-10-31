@@ -15,18 +15,20 @@ export default class Index extends React.Component {
     return (
       <div>
         <Head />
-        <Container fluid>
-          <Navbar />
-          <Row>
-            <Col md='6'>
-              <Queue title='Antall i kø' source='https://logs.tilskudd.service.t-fk.no/stats/queue' refresh='10' />
-            </Col>
-            <Col md='6'>
-              <Total title='Antall totalt' source='https://logs.tilskudd.service.t-fk.no/stats/total' refresh='10' />
-            </Col>
-          </Row>
-          <Undertjenester source='https://stats.service.t-fk.no/stats/tilskudd' refresh='10' />
-        </Container>
+        <div>
+          <Navbar title={'Dashboard tilskudd'} />
+          <Container fluid>
+            <Row>
+              <Col md='6'>
+                <Queue title='Antall i kø' source='https://logs.tilskudd.service.t-fk.no/stats/queue' refresh='10' />
+              </Col>
+              <Col md='6'>
+                <Total title='Antall totalt' source='https://logs.tilskudd.service.t-fk.no/stats/total' refresh='10' />
+              </Col>
+            </Row>
+            <Undertjenester source='https://stats.service.t-fk.no/stats/tilskudd' refresh='10' />
+          </Container>
+        </div>
       </div>
     )
   }
