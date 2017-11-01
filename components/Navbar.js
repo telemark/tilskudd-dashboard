@@ -14,7 +14,7 @@ export default class Navbar extends React.Component {
           <li><Link href='/' prefetch><a>Dashboard</a></Link></li>
           <li><Link href='/stats' prefetch><a>Statistikk</a></Link></li>
         </ul>
-        <style>{`
+        <style jsx>{`
           nav {
             display: flex;
             justify-content: space-between;

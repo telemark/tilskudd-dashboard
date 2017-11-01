@@ -1,7 +1,6 @@
 'use strict'
 
 import React from 'react'
-import Panel from 'muicss/lib/react/panel'
 const getData = require('../lib/get-data')
 const repackSummary = require('../lib/repack-summary')
 
@@ -27,22 +26,37 @@ export default class Status extends React.Component {
 
   render () {
     return (
-      <Panel>
+      <div className={'wrapper'}>
         <h2>{this.props.title}</h2>
-        <table width='100%'>
-          <tbody>
-            {this.state.data.map((line, index) => {
-              const key = `summary-${index}`
-              return (
-                <tr key={key}>
-                  <td className='mui--text-display1 mui--divider-bottom'>{line.name}</td>
-                  <td className='mui--text-display1 mui--text-right mui--divider-bottom'>{line.total}</td>
-                </tr>
-              )
-            })}
-          </tbody>
-        </table>
-      </Panel>
+        {this.state.data.map((line, index) => {
+          const key = `summary-${index}`
+          return (
+            <div className={'table'} key={key}>
+              <p>{line.name}</p>
+              <p className={'alignRight'}>{line.total}</p>
+            </div>
+          )
+        })}
+        <style jsx>{`
+          .wrapper {
+            padding: 20px;
+          }
+          .table {
+            display: flex;
+            border-bottom: 1px solid gray;
+          }
+          .table > p {
+            flex: 0 0 50%;
+            padding: 5px 0 5px 0;
+            font-weight: 400;
+            font-size: 34px;
+          }
+          .alignRight {
+            text-align: right;
+          }
+        `}
+        </style>
+      </div>
     )
   }
 }

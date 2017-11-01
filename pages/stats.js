@@ -1,9 +1,6 @@
 'use strict'
 
 import React from 'react'
-import Container from 'muicss/lib/react/container'
-import Row from 'muicss/lib/react/row'
-import Col from 'muicss/lib/react/col'
 import Head from '../components/head'
 import Summary from '../components/Summary'
 import Navbar from '../components/Navbar'
@@ -15,13 +12,7 @@ export default class Index extends React.Component {
         <Head />
         <div>
           <Navbar title={'Dashboard tilskudd'} />
-          <Container fluid>
-            <Row>
-              <Col md='12'>
-                <Summary title='Oppsummering' source='https://logs.tilskudd.service.t-fk.no/stats/categories' refresh='10' />
-              </Col>
-            </Row>
-          </Container>
+          <Summary title='Oppsummering' source='https://logs.tilskudd.service.t-fk.no/stats/categories' refresh='10' />
         </div>
       </div>
     )
