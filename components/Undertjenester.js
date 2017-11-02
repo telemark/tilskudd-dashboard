@@ -3,6 +3,7 @@
 import React from 'react'
 import Card from './Card'
 import ErrorCard from './ErrorCard'
+import Row from './Row'
 const getData = require('../lib/get-data')
 
 function updateData (response) {
@@ -40,7 +41,7 @@ export default class Status extends React.Component {
   render () {
     return (
       <div>
-        <div className={'row'}>
+        <Row>
           <div>
             <ErrorCard title='Kø feil' number={this.state.data.queueErrors} />
           </div>
@@ -50,8 +51,8 @@ export default class Status extends React.Component {
           <div>
             <ErrorCard title='Arkivert feil' number={this.state.data.archiveErrors} />
           </div>
-        </div>
-        <div className={'row'}>
+        </Row>
+        <Row>
           <div>
             <Card title='Behandlet' number={this.state.data.queueDone} />
           </div>
@@ -61,16 +62,12 @@ export default class Status extends React.Component {
           <div>
             <Card title='Arkivert' number={this.state.data.archiveDone} />
           </div>
-        </div>
+        </Row>
         <style jsx>
           {`
-            .row {
-              display: flex;
-              justify-content: space-evenly;
-            }
-            .row > div {
-              flex: 33%
-              margin: 10px;
+            div {
+              flex: 3;
+              margin: 5px;
             }
           `}
         </style>
