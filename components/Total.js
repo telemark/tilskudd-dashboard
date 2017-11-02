@@ -1,7 +1,7 @@
 'use strict'
 
 import React from 'react'
-import Panel from 'muicss/lib/react/panel'
+import Card from './Card'
 const getData = require('../lib/get-data')
 
 export default class Status extends React.Component {
@@ -26,12 +26,7 @@ export default class Status extends React.Component {
 
   render () {
     return (
-      <Panel>
-        <h2>{this.props.title}</h2>
-        <ul className='mui-list--unstyled'>
-          {this.state.data ? <li className='mui--text-display4'>{this.state.data.total || 0}</li> : null}
-        </ul>
-      </Panel>
+      <Card title={this.props.title} number={this.state.data.total || 0} />
     )
   }
 }

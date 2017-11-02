@@ -25,10 +25,11 @@ export default class Index extends React.Component {
           {`
             .row {
               display: flex;
-              justify-content: space-around;
+              justify-content: space-evenly;
             }
             .row > div {
-              flex-grow: 1
+              flex-grow: 1;
+              margin: 0 10px 0 10px;
             }
           `}
         </style>

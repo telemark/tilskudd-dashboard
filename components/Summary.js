@@ -27,7 +27,7 @@ export default class Status extends React.Component {
   render () {
     return (
       <div className={'wrapper'}>
-        <h2>{this.props.title}</h2>
+        <h1>{this.props.title}</h1>
         {this.state.data.map((line, index) => {
           const key = `summary-${index}`
           return (
@@ -39,15 +39,20 @@ export default class Status extends React.Component {
         })}
         <style jsx>{`
           .wrapper {
-            padding: 20px;
+            padding: 0 10px 0 10px;
           }
           .table {
+            padding: 0;
             display: flex;
             border-bottom: 1px solid gray;
           }
+          .table:hover {
+            background: #6AC4AE;
+          }
           .table > p {
-            flex: 0 0 50%;
-            padding: 5px 0 5px 0;
+            flex-grow: 1;
+            padding: 5px;
+            margin: 0;
             font-weight: 400;
             font-size: 34px;
           }

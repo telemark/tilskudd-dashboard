@@ -1,8 +1,6 @@
 'use strict'
 
 import React from 'react'
-import Row from 'muicss/lib/react/row'
-import Col from 'muicss/lib/react/col'
 import Card from './Card'
 import ErrorCard from './ErrorCard'
 const getData = require('../lib/get-data')
@@ -42,28 +40,40 @@ export default class Status extends React.Component {
   render () {
     return (
       <div>
-        <Row>
-          <Col md='4'>
+        <div className={'row'}>
+          <div>
             <ErrorCard title='Kø feil' number={this.state.data.queueErrors} />
-          </Col>
-          <Col md='4'>
+          </div>
+          <div>
             <ErrorCard title='SvarUt feil' number={this.state.data.distributionErrors} />
-          </Col>
-          <Col md='4'>
+          </div>
+          <div>
             <ErrorCard title='Arkivert feil' number={this.state.data.archiveErrors} />
-          </Col>
-        </Row>
-        <Row>
-          <Col md='4'>
+          </div>
+        </div>
+        <div className={'row'}>
+          <div>
             <Card title='Behandlet' number={this.state.data.queueDone} />
-          </Col>
-          <Col md='4'>
+          </div>
+          <div>
             <Card title='SvarUt' number={this.state.data.distributionDone} />
-          </Col>
-          <Col md='4'>
+          </div>
+          <div>
             <Card title='Arkivert' number={this.state.data.archiveDone} />
-          </Col>
-        </Row>
+          </div>
+        </div>
+        <style jsx>
+          {`
+            .row {
+              display: flex;
+              justify-content: space-evenly;
+            }
+            .row > div {
+              flex: 33%
+              margin: 10px;
+            }
+          `}
+        </style>
       </div>
     )
   }

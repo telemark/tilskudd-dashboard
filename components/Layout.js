@@ -23,7 +23,8 @@ export default ({ children }) => (
         }
 
         .wrapper {
-          padding: 0 15px 0 15px;
+          padding: 0;
+          margin: 0;
         }
       `}
     </style>
