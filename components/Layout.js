@@ -15,11 +15,11 @@ export default ({ children }) => (
           margin: 0;
           background: white;
           color: black;
-          font-family: "Georgia", "Times", "Times New Roman", serif;
+          font-family: "Open sans", sans-serif;
         }
 
         h1, h2, h3, h4, h5, h6 {
-          font-family: "Gill Sans", "Arial", sans-serif;
+          font-family: "Arial", sans-serif;
         }
 
         .wrapper {

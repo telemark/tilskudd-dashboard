@@ -41,7 +41,7 @@
   "now": {
     "name": "dashboard-tilskudd",
     "alias": [
-      "dashboard.tilskudd.next.t-fk.no"
+      "tilskudd.dashboard.next.t-fk.no"
     ],
     "env": {
       "NODE_ENV": "production"
