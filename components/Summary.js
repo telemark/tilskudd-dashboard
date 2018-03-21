@@ -1,10 +1,8 @@
-'use strict'
-
-import React from 'react'
-const getData = require('../lib/get-data')
+import { Component } from 'react'
+import getData from '../lib/get-data'
 const repackSummary = require('../lib/repack-summary')
 
-export default class Status extends React.Component {
+export default class Status extends Component {
   constructor (props) {
     super(props)
     this.state = {

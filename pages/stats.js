@@ -1,5 +1,3 @@
-'use strict'
-
 import Layout from '../components/Layout'
 import Summary from '../components/Summary'
 

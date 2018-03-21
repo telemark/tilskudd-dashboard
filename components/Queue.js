@@ -1,8 +1,6 @@
-'use strict'
-
 import React from 'react'
 import Card from './Card'
-const getData = require('../lib/get-data')
+import getData from '../lib/get-data'
 
 export default class Status extends React.Component {
   constructor (props) {

@@ -1,10 +1,8 @@
-'use strict'
-
 import React from 'react'
 import Card from './Card'
 import ErrorCard from './ErrorCard'
 import Row from './Row'
-const getData = require('../lib/get-data')
+import getData from '../lib/get-data'
 
 function updateData (response) {
   const data = response.length > 0 ? response[0] : false

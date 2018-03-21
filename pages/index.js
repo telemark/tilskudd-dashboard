@@ -1,13 +1,11 @@
-'use strict'
-
-import React from 'react'
+import { Component } from 'react'
 import Queue from '../components/Queue'
 import Undertjenester from '../components/Undertjenester'
 import Total from '../components/Total'
 import Layout from '../components/Layout'
 import Row from '../components/Row'
 
-export default class Index extends React.Component {
+export default class Index extends Component {
   render () {
     return (
       <Layout>
