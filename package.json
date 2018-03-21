@@ -10,7 +10,7 @@
     "url": "https://github.com/zrrrzzt"
   },
   "engines": {
-    "node": ">=8.9.1"
+    "node": ">=8.10.0"
   },
   "scripts": {
     "test": "standard && nsp check && ava",
@@ -21,7 +21,8 @@
     "dev": "next",
     "build": "next build && next export",
     "start": "next start",
-    "deploy": "npm run build && now --static out -n dashboard-tilskudd && now alias"
+    "deploy": "npm run build && now --static out --name dashboard-tilskudd && now alias",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
   },
   "keywords": [
     "dashboard",
