@@ -6,7 +6,7 @@ export default class Status extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      data: {number: 0}
+      data: { number: 0 }
     }
     this.tick = this.tick.bind(this)
   }
@@ -14,14 +14,14 @@ export default class Status extends React.Component {
   async componentDidMount () {
     const data = await getData(this.props.source)
     const value = data && data.queue ? data.queue : 0
-    this.setState({data: {number: value}})
+    this.setState({ data: { number: value } })
     this.timer = setInterval(this.tick, parseInt(this.props.refresh || '1', 10) * 1000 * 60)
   }
 
   async tick () {
     const data = await getData(this.props.source)
     const value = data && data.queue ? data.queue : 0
-    this.setState({data: {number: value}})
+    this.setState({ data: { number: value } })
   }
 
   render () {

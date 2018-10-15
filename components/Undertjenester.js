@@ -27,13 +27,13 @@ export default class Status extends React.Component {
 
   async componentDidMount () {
     const response = await getData(this.props.source)
-    this.setState({data: updateData(response)})
+    this.setState({ data: updateData(response) })
     this.timer = setInterval(this.tick, parseInt(this.props.refresh || '1', 10) * 1000 * 60)
   }
 
   async tick () {
     const response = await getData(this.props.source)
-    this.setState({data: updateData(response)})
+    this.setState({ data: updateData(response) })
   }
 
   render () {
