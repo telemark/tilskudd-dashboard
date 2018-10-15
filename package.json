@@ -40,16 +40,6 @@
     "url": "https://github.com/telemark/tilskudd-dashboard/issues"
   },
   "homepage": "https://github.com/telemark/tilskudd-dashboard#readme",
-  "now": {
-    "name": "dashboard-tilskudd",
-    "alias": [
-      "tilskudd.dashboard.next.t-fk.no"
-    ],
-    "env": {
-      "NODE_ENV": "production"
-    },
-    "type": "npm"
-  },
   "devDependencies": {
     "ava": "0.25.0",
     "coveralls": "3.0.2",
