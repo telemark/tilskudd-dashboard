@@ -1,7 +1,10 @@
 {
+  "version": 2,
   "name": "dashboard-tilskudd",
   "alias": [
     "tilskudd.dashboard.next.t-fk.no"
   ],
-  "type": "static"
+  "builds": [
+    { "src": "package.json", "use": "@now/static-build", "config": { "distDir": "out" }}
+  ]
 }

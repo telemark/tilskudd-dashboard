@@ -21,9 +21,10 @@
     "dev": "next",
     "build": "next build && next export",
     "start": "next start",
-    "deploy": "npm run build && now --static out --name dashboard-tilskudd && now alias",
+    "deploy": "now && now alias",
     "refresh": "rm -rf node_modules && rm package-lock.json && npm install",
-    "cleanup": "rm -rf .next && rm -rf out"
+    "cleanup": "rm -rf .next && rm -rf out",
+    "now-build": "next build && next export"
   },
   "keywords": [
     "dashboard",
