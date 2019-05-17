@@ -11,10 +11,10 @@ export default class Index extends Component {
       <Layout>
         <Row>
           <div>
-            <Queue title='Antall i kø' source='https://logs.tilskudd.service.t-fk.no/stats/queue' refresh='10' />
+            <Queue title='Antall i kø' source='https://stats.logs.tilskudd.t-fk.no/stats/queue' refresh='10' />
           </div>
           <div>
-            <Total title='Antall totalt' source='https://logs.tilskudd.service.t-fk.no/stats/total' refresh='10' />
+            <Total title='Antall totalt' source='https://stats.logs.tilskudd.t-fk.no/stats/total' refresh='10' />
           </div>
         </Row>
         <Undertjenester source='https://stats.service.t-fk.no/stats/tilskudd' refresh='10' />
