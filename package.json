@@ -19,12 +19,12 @@
     "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
     "standard-fix": "standard --fix",
     "dev": "next",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
-    "deploy": "npm test && now --target production",
+    "now-build": "next build",
+    "deploy": "npm test && now --prod",
     "refresh": "rm -rf node_modules && rm package-lock.json && npm install",
-    "cleanup": "rm -rf .next && rm -rf out",
-    "now-build": "next build"
+    "cleanup": "rm -rf .next && rm -rf out"
   },
   "keywords": [
     "dashboard",
