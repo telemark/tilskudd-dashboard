@@ -5,6 +5,18 @@
 
 Dashboard for tilskudd
 
+# Development
+
+```
+$ npm run dev
+```
+
+# Deploy
+
+```
+$ npm run deploy
+```
+
 ## License
 
 [MIT](LICENSE)
