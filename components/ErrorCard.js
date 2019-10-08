@@ -1,5 +1,5 @@
 export default ({ title, number }) => (
-  <div className={'card'}>
+  <div className='card'>
     <h2>{title}</h2>
     <p className={number > 0 ? 'red' : 'green'}>{number}</p>
     <style jsx>

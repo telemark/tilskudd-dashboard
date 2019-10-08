@@ -24,14 +24,14 @@ export default class Status extends Component {
 
   render () {
     return (
-      <div className={'wrapper'}>
+      <div className='wrapper'>
         <h1>{this.props.title}</h1>
         {this.state.data.map((line, index) => {
           const key = `summary-${index}`
           return (
-            <div className={'table'} key={key}>
+            <div className='table' key={key}>
               <p>{line.name}</p>
-              <p className={'alignRight'}>{line.total}</p>
+              <p className='alignRight'>{line.total}</p>
             </div>
           )
         })}

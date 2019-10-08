@@ -1,7 +1,7 @@
 export default ({ children }) => (
   <div>
-    <div className={'row'}>
-      { children }
+    <div className='row'>
+      {children}
     </div>
     <style jsx>
       {`

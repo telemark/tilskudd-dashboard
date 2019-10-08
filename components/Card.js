@@ -1,5 +1,5 @@
 export default ({ title, number }) => (
-  <div className={'card'}>
+  <div className='card'>
     <h2>{title}</h2>
     <p>{number}</p>
     <style jsx>
